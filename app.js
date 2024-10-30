@@ -11,6 +11,7 @@ document.getElementById('waterForm').addEventListener('submit', function(event) 
 
 document.getElementById('output').innerHTML = `
     Per raggiungere una durezza di ${durezzaTarget}°dH, <br>
-    rimuovere <h3><strong>${litriRubinetto.toFixed(2)}</strong></h3> litri dall'acquario e sostituirli con acqua di rubinetto.
-`;    document.getElementById('result').style.display = 'block';
-});
+    rimuovere <strong><h3 style="display: inline;">${litriRubinetto.toFixed(2)}</h3></strong> litri dall'acquario e sostituirli con acqua di rubinetto.
+`;
+document.getElementById('result').style.display = 'block';
+
