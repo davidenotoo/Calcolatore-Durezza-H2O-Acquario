@@ -9,6 +9,8 @@ document.getElementById('waterForm').addEventListener('submit', function(event) 
     const litriRubinetto = ((durezzaTarget - durezzaAcquario) / (durezzaRubinetto - durezzaAcquario)) * litriAcquario;
     const litriAcquarioResidui = litriAcquario - litriRubinetto;
 
-    document.getElementById('output').textContent = `Per raggiungere una durezza di ${durezzaTarget}°dH, rimuovere ${litriRubinetto.toFixed(2)} litri dall'acquario e sostituirli con acqua di rubinetto.`;
-    document.getElementById('result').style.display = 'block';
+document.getElementById('output').innerHTML = `
+    Per raggiungere una durezza di ${durezzaTarget}°dH, <br>
+    rimuovere <h3><strong>${litriRubinetto.toFixed(2)}</strong></h3> litri dall'acquario e sostituirli con acqua di rubinetto.
+`;    document.getElementById('result').style.display = 'block';
 });
